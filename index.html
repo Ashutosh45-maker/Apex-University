@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar Layout */
+        .navbar {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #0f172a;
+            border-bottom: 1px solid #334155;
+        }
+
+        /* Logo/Brand */
+        .nav-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #38bdf8;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        /* Center Links */
+        .nav-links {
+            display: flex;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        
+        .nav-search input {
+            padding: 10px 18px;
+            border-radius: 20px; 
+            border: 1px solid #334155;
+            background-color: #1e293b;
+            color: white;
+            font-size: 0.9em;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            width: 200px;
+        }
+
+        .nav-search input:focus {
+            border-color: #38bdf8;
+            box-shadow: 0 0 8px rgba(56, 189, 248, 0.4); 
+        }
+        
+        
+        .main-content {
+            padding: 40px;
+        }
+        .welcome-title {
+        text-align: center;
+        font-size: 3.5em;
+        font-weight: bold;
+        color: #38bdf8; 
+        margin-top: 80px; 
+        letter-spacing: 2px;
+        text-shadow: 0 0 15px rgba(56, 189, 248, 0.2); 
+        }
+        .university-info {
+    max-width: 900px;
+    margin: 30px auto 0; 
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+}
+
+.info-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: left; 
+}
+
+.info-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, border-color 0.3s;
+}
+        </style>
+        </head>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-brand">Apex University</div>
+        
+        <div class="nav-links">
+            <a href="#">Academics</a>
+            <a href="#">Admissions</a>
+            <a href="#">Students Portal</a>
+            <a href="#">Contacts</a>
+        </div>
+        
+        <div class="nav-search">
+            <input type="text" placeholder="Search Apex...">
+        </div>
+    </header>
+
+    
+    <main class="main-content">
+        <h1 class="welcome-title">Welcome To Apex University</h1>
+        <section class="university-info">
+    <p class="intro-text">
+        Apex University is renowned for its practical, hands-on approach to modern education. We are famous for bridging the gap between 
+        theoretical knowledge and real-world application, equipping students with the cutting-edge skills required by today's top-tier tech and business industries.
+    </p>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Programs Offered</h3>
+            <ul>
+                <li>B.Tech in Computer Science</li>
+                <li>BBA (Bachelor of Business Administration)</li>
+                <li>MBA (Master of Business Administration)</li>
+                <li>MCA (Master of Computer Applications)</li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
+<section class="image-section">
+    <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80" alt="Apex University Campus" class="campus-image">
+</section>
+        
+    </main>
+</body>
+</html>
